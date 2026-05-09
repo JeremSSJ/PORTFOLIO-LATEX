@@ -73,15 +73,6 @@
 \newpage
 \setcounter{page}{1}
 \pagestyle{fancy}
-\section*{Glossaire}
-\addcontentsline{toc}{section}{Glossaire}
-
-\begin{description}[leftmargin=4.5cm, style=sameline, font=\normalfont\bfseries]
-  \item[Legacy] Systèmes informatiques anciens, souvent complexes et peu documentés, qui sont difficiles à remplacer ou à moderniser en raison de leur importance critique pour les opérations d'une organisation.
-  \item[Moat] Un avantage concurrentiel durable qui protège une entreprise de la concurrence, lui permettant de maintenir des marges élevées et une rentabilité à long terme.
-\end{description}
-
-\newpage
 \section{Résultats du questionnaire}
 Après avoir rempli le questionnaire, voici les résultats obtenus :
 
@@ -92,9 +83,9 @@ Après avoir rempli le questionnaire, voici les résultats obtenus :
   \item[0 pt] M3 -- Participatif (forte relation / faible tâche)
 \end{description}
 
-Ces résultats me correspondent bien. Ils dessinent un profil nettement orienté 
-vers la tâche, avec une double dominante directif/délégatif et une quasi-absence 
-de dimension relationnelle (M3 = 0). Je tends effectivement à intervenir soit de 
+Ces résultats dessinent un profil nettement orienté 
+vers la tâche, avec deux tendances fortes, un côté directif et un côté 
+délégatif, et peu de place laissée à la dimension relationnelle, ce qui me correspond bien. Je tends effectivement à intervenir soit de 
 manière très cadrante et exigeante sur la qualité du travail, soit, après un certain 
 temps, à lâcher prise et à laisser les collègues agir en toute autonomie, sans grande 
 place accordée à la co-construction ou à la dimension humaine de la collaboration. 
@@ -102,47 +93,68 @@ C'est dans ce contexte que s'inscrivent les situations que j'analyserai ci-desso
 vécues en tant que développeur au Service fédéral des Pensions (SFP).
 
 \section{Une situation où ce mode de fonctionnement me nuit}
-Mon réflexe directif se traduit concrètement par une tendance à signaler 
-les pratiques de codage que je juge sous-optimales, des choix susceptibles de 
-générer de la dette technique ou de compliquer la maintenance future. Or, 
-pour des collègues plus âgés, recevoir des remarques d'un développeur 
-junior peut être perçu non pas comme une aide, mais comme une mise en 
-cause de leur compétence. Ce que j'exprime comme un commentaire technique 
-objectif est parfois reçu comme une critique personnelle.
+Mon réflexe directif se traduit concrètement par une tendance à signaler les
+pratiques de développement que je juge sous-optimales, des choix susceptibles de générer
+de la dette technique ou de compliquer la maintenance future. Mon intention n'est
+pas de critiquer le travail des collègues, mais d'améliorer la qualité du rendu
+final et d'anticiper les problèmes que l'on rencontrerait lors de futures évolutions
+du code. Pourtant, pour des collègues plus âgés, recevoir des remarques d'un
+développeur junior peut être perçu non pas comme une aide, mais comme une remise en
+cause de leur compétence.
 
-Ce malentendu tient largement à mon score faible en relationnel : je n'ai pas 
-naturellement le réflexe d'enrober un feedback dans une relation 
-de confiance préalable, ni de formuler mes remarques sous forme de 
-questionnement plutôt que d'affirmation. La forme étant plus directe 
-que ce à quoi les collègues s'attendent, le fond, pourtant justifié 
-techniquement, peut passer mal. À cela s'ajoute un stress personnel réel : 
-repasser derrière le travail des autres pour vérifier qu'il n'y a pas de coquilles dans le code
- représente une charge mentale non négligeable.
+De mon côté, j'accepte volontiers la critique argumentée, quelle qu'en soit la
+source, et je suis prêt à modifier mon approche si cela améliore le résultat
+final, ce qui correspond bien à mon orientation centrée sur la tâche. Mais ce
+malentendu tient largement à mon score faible en relationnel, je n'ai pas
+naturellement le réflexe d'enrober un feedback dans une relation de confiance
+préalable, ni de formuler mes remarques sous forme de questionnement plutôt que
+d'affirmation. La forme étant plus directe que ce à quoi les collègues s'attendent,
+le fond, pourtant justifié techniquement, peut mal passer. À cela s'ajoute un
+stress personnel réel, en effet, mon côté pointilleux m'amène à repasser derrière le travail
+des autres pour vérifier qu'il n'y a pas de coquilles, ce qui représente une charge
+mentale non négligeable.
 
-Mon score M4 élevé pose quant à lui problème dans les réunions inter-équipes. 
-Face à des interlocuteurs que je perçois comme plus expérimentés, je 
-m'efface : je n'interviens pas dans les débats et ne propose pas 
-d'idées, convaincu qu'ils trouveront de meilleures solutions. Ce 
-comportement est pourtant lu de l'extérieur comme un manque d'implication, 
-donnant l'impression que le projet m'est indifférent, alors que 
-je suis pleinement attentif.
+Avec le temps, j'ai toutefois tendance à basculer vers un style plus délégatif,
+je donne mon avis, puis je laisse chacun décider. Je me dis que ce sont des adultes
+responsables et que ce n'est pas à moi de les micromanager. Si des problèmes
+surviennent plus tard, au moins j'aurai prévenu.
+
+Ce style délégatif pose quant à lui problème dans les réunions inter-équipes, où
+je suis envoyé comme représentant de mon équipe. Face à des interlocuteurs
+que je perçois comme plus expérimentés, je m'efface : je n'interviens pas dans les
+débats et ne propose pas d'idées, convaincu qu'ils trouveront de meilleures solutions
+que ce que je pourrais apporter. Je me contente de prendre note de ce qui est décidé
+pour l'implémenter ensuite dans mon code. Ce comportement est pourtant lu de
+l'extérieur comme un manque d'implication, donnant l'impression que le projet m'est
+indifférent, alors que je suis pleinement attentif.
 
 \section{Une situation où ce mode de fonctionnement m'a été favorable}
-Mon orientation forte vers la tâche m'a constitué un atout réel sur la question de la qualité du code. Là où certains collègues plus anciens reproduisent parfois des habitudes héritées sans les questionner, j'aborde le développement avec un regard plus actuel sur les bonnes pratiques du métier. Cela m'a poussé à défendre des choix techniques rigoureux et à maintenir une exigence de qualité bénéfique sur le long terme.
+Malgré ma courte expérience, mon orientation forte vers la tâche m'a constitué
+un atout réel sur la question de la qualité du code. Les pratiques évoluent vite
+dans le secteur informatique, et là où certains collègues plus anciens ont parfois
+le nez dans le guidon et reproduisent des habitudes héritées sans les questionner,
+j'aborde le développement avec un regard plus actuel sur les bonnes pratiques du
+métier. Ne pas avoir accumulé des années de réflexes figés me permet parfois
+d'apporter une perspective plus fraîche. Cela me pousse à défendre des choix
+techniques rigoureux et à maintenir une exigence de qualité bénéfique sur le
+long terme.
 
 Avec le temps, ce positionnement a gagné en légitimité. Au début, 
-mon directivisme était mal reçu : j'étais perçu comme un « blanc-bec » 
+mon attitude directive était mal reçue : j'étais perçu comme un « blanc-bec » 
 sans la crédibilité suffisante pour remettre en question des pratiques 
-établies. Mais au fil des mois, la qualité de mon travail a été reconnue, 
+établies. Mais au fil du temps, la qualité de mon travail a été reconnue, 
 et ma rigueur a commencé à être valorisée plutôt que subie. Certains 
 collègues viennent désormais spontanément me demander mon avis sur 
-des choix techniques, ce qui témoigne d'une intégration progressive 
+des choix techniques, ce qui témoigne d'une bonne intégration 
 dans la dynamique d'équipe. Ma tendance à basculer vers un style plus 
 délégatif, en donnant mon avis puis en laissant chacun décider, m'a par 
 ailleurs permis de préserver les relations sans renoncer à mes convictions.
 
 \section{Ce que je pourrais améliorer en tant que (futur) manager}
-La lecture croisée de ces situations pointe vers une lacune structurelle : la quasi-absence de dimension relationnelle (M3 = 0). En tant que futur manager, il me faudra apprendre à adapter mon style au niveau de maturité de chaque interlocuteur, plutôt que d'osciller uniquement entre directivisme et délégation.
+La lecture croisée de ces situations pointe vers une lacune structurelle : la
+quasi-absence de dimension relationnelle (M3 = 0). En tant que futur manager,
+il me faudra apprendre à adapter mon style au niveau de maturité de chaque
+interlocuteur, plutôt que d'osciller uniquement entre directivisme et délégation.
 
 Concrètement, cela implique de travailler la formulation de mes feedbacks, 
 passer de l'affirmation à la question ouverte, valoriser avant de corriger, 
